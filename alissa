@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>Hai Alissa</h1>
+        <img src="https://media.giphy.com/media/j2aFtfSLKhL6Wcx74S/giphy.gif">
+        <h1>Mau ga jadi pacarku?</h1>
+        <button id='btn_mau' onclick='alert("I <3 U")'>Mau</button>&nbsp;
+        <button id='btn_gamau' onclick='gamau(this)' style='position:absolute'>Gamau</button>
+    </body>
+    <script>
+        function gamau(id){
+            var mau = document.getElementById('btn_mau');
+            var i = Math.floor(Math.random()*300)+1;
+            var j = Math.floor(Math.random()*100)+mau.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = j+'px';
+        }
+    </script>
+</html>
